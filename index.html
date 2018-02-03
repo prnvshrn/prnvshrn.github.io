@@ -12,11 +12,16 @@
         body {
             position: relative;
         }
-        #section1 {padding-top:50px;color: #fff; background-image: url("grey_bg.jpg"); background-size:cover;  font-family: 'Tangerine', serif;}
-        #section2 {padding-top:10px;color: black; background-color: darkorange;}
-        #section3 {padding-top:10px;color: #fff; background-color: #ff9800;}
-        #section41 {padding-top:50px;color: #fff; background-color: #00bcd4;}
-        #section42 {padding-top:50px;color: #fff; background-color: #009688;}
+
+        .well:hover
+        {
+            transform: scale(1.05);
+            background-color: slategrey;
+        }
+
+        #section1 {padding-top:50px;color: black; background-image: url("grey_bg.jpg"); background-size:cover;  font-family: 'Tangerine', serif;}
+        #section2 {padding-top:10px;color: black; background-color: #009688;}
+        #section3 {padding-top:10px;color: black; background-color: #ff9800;}
     </style>
 
     <script>
@@ -47,14 +52,8 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="#section1">Home</a></li>
-                    <li><a href="#section2">Live Applications</a></li>
-                    <li><a href="#section3">Work Experience</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#section41">Section 4-1</a></li>
-                            <li><a href="#section42">Section 4-2</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#section2">Work</a></li>
+                    <li><a href="#section3">Technical Skills</a></li>
                 </ul>
             </div>
         </div>
@@ -73,8 +72,8 @@
             <h3>I am Pranav Sharan, pursuing Masters in Computer Science from Arizona State University at Tempe, Arizona.
                 Right now, I am looking for internship opportunities to demonstrate my skills.
                 <br> <br>I love working on Django, Python, JavaScript, React. In addition to these technologies I have
-                worked on various other technologies like Java, C++, PostgreSQL. Apart from coding, football is my
-                passion and I am also an avid gamer.
+                worked on various other technologies like Java, C++, PostgreSQL as well. Apart from coding, football is my
+                passion and I am also an avid video gamer.
             </h3>
             <img src="bg-2.jpg" class="img-circle" style="height:120px;" alt="Los Angeles">
             </center>
@@ -85,10 +84,11 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
         <center>
-        <button class="btn btn-warning btn-lg"><span class="fa fa-github" style="margin-right: 5px"></span>Github</button>
-        <button class="btn btn-info btn-lg"><span class="fa fa-linkedin-square" style="margin-right: 5px"></span>LinkedIn</button>
-        <button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope" style="margin-right: 5px"></span>Mail</button>
-            <button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-download-alt" style="margin-right: 5px"></span>Resume</button>
+        <button  onclick="location.href='https://github.com/prnvshrn/';" class="btn btn-warning btn-lg"><span class="fa fa-github" style="margin-right: 5px"></span>Github</button>
+        <button onclick="location.href='https://www.linkedin.com/in/pranav-sharan/';" class="btn btn-info btn-lg"><span class="fa fa-linkedin-square" style="margin-right: 5px"></span>LinkedIn</button>
+        <button onclick="location.href='mailto:prnvshrn@gmail.com';" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope" style="margin-right: 5px"></span>Mail</button>
+        <button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-download-alt" style="margin-right: 5px"></span>Resume</button>
+
         </center>
         </div>
         <div class="col-sm-2"></div>
@@ -109,7 +109,9 @@
 
 <div id="section2" class="container-fluid">
     <div class="container">
-        <h2>Work</h2>
+        <div class="page-header">
+            <h2>Work</h2>
+        </div>
         <div class="row">
             <div class="col-sm-6">
                 <div class="well" style="background-color: lightgray">
@@ -128,11 +130,13 @@
                 <div class="well" style="background-color: lightgray">
                 <h4>
                     <b>Explore</b><hr>
-                    Moving it 24 carat magin in the air. UMMM U
+                    Android application that tells users about wide range of places from restaurants to parks, their
+                    reviews and ratings.<br><br>
+                    <b>Technologies Used:</b><br>Android, Java, Google Places API
                 </h4>
                 <form>
-                    <button class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                    <button class="form-control btn btn-primary btn-lg" style="margin-top: 10px">Launch Website</button>
+                    <button data-toggle="modal" data-target="#ExploreModal" class="form-control btn btn-primary btn-lg">View Screenshots</button>
+                    <a href="https://play.google.com/store/apps/details?id=novitech.explore&hl=en" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Play Store</a>
                 </form>
                 </div>
             </div>
@@ -143,11 +147,13 @@
                 <div class="well" style="background-color: lightgray">
                     <h4>
                         <b>Storify</b><hr>
-                        Moving it 24 carat magin in the air. UMMM U
+                        Storify is a Django-based application that allows users to publish and view short stories under
+                        an anonymous username of their choice.<br><br>
+                        <b>Technologies Used:</b><br>Django, Android, BootStrap, HTML5
                     </h4>
                     <form>
-                        <button class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                        <button class="form-control btn btn-primary btn-lg" style="margin-top: 10px">Launch Website</button>
+                        <button data-toggle="modal" data-target="#StorifyModal" class="form-control btn btn-primary btn-lg">View Screenshots</button>
+                        <a href="https://github.com/prnvshrn/Storify" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Github</a>
                     </form>
                 </div>
             </div>
@@ -155,11 +161,12 @@
                 <div class="well" style="background-color: lightgray">
                     <h4>
                         <b>DB Helper</b><hr>
-                        Moving it 24 carat magin in the air. UMMM U
+                        Application to handle operations on PostgreSQL databases like table creation, update and deletion.
+                        <br><br><b>Technologies Used:</b><br>Python, Flask, HTML5, PostgreSQL
                     </h4>
                     <form>
-                        <button class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                        <button class="form-control btn btn-primary btn-lg" style="margin-top: 10px">Launch Website</button>
+                        <button data-toggle="modal" data-target="#DBHelperModal" class="form-control btn btn-primary btn-lg">View Screenshots</button>
+                        <a href="https://github.com/prnvshrn/DBHelper" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Github</a>
                     </form>
                 </div>
             </div>
@@ -170,11 +177,12 @@
                 <div class="well" style="background-color: lightgray">
                     <h4>
                         <b>K-means Clustering Simulator</b><hr>
-                        Moving it 24 carat magin in the air. UMMM U
+                        A software that simulates k-means clustering algorithm for user given data.
+                        <br><br><b>Technologies Used:</b><br>Java, MigLayout, JFreeChart
                     </h4>
                     <form>
-                        <button class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                        <button class="form-control btn btn-primary btn-lg" style="margin-top: 10px">Launch Website</button>
+                        <button data-toggle="modal" data-target="#KMeansModal" class="form-control btn btn-primary btn-lg">View Screenshots</button>
+                        <a href="https://github.com/prnvshrn/Cluster-Analysis-Simulator" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Github</a>
                     </form>
                 </div>
             </div>
@@ -182,11 +190,11 @@
                 <div class="well" style="background-color: lightgray">
                     <h4>
                         <b>FoodWatch</b><hr>
-                        Moving it 24 carat magin in the air. UMMM U
+                        This is an android application that details out the nutrition details of food items
+                        <br><br><b>Technologies Used:</b><br>Android, Java, JSON, mpAndroidChart, Nutritionix API
                     </h4>
                     <form>
-                        <button class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                        <button class="form-control btn btn-primary btn-lg" style="margin-top: 10px">Launch Website</button>
+                        <a href="https://github.com/prnvshrn/FoodWatch" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Github</a>
                     </form>
                 </div>
             </div>
@@ -196,18 +204,54 @@
 </div>
 
 <div id="section3" class="container-fluid">
+    <div class="container">
+        <div class="page-header">
+            <h2>Technical Skills</h2>
+        </div>
+        <table class="table table-hover">
+            <tbody>
+            <tr class="warning">
+                <td>
+                    <b>Languages</b>
+                </td>
+                <td>
+                    Python, JavaScript, HTML5, Java, C++
+                </td>
+            </tr>
+            <tr class="info">
+                <td>
+                    <b>Frameworks</b>
+                </td>
+                <td>
+                    Django, React, BootStrap, Android
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="row">
+        <div class="col-sm-4">
+        <div class="thumbnail" style="background: none;border:none;">
+            <img src="react.png">
+            <div class="caption">React</div>
+        </div>
+        </div>
 
-</div>
+            <div class="col-sm-4">
+            <div class="thumbnail" style="background: none;border:none;">
+            <img src="django.png">
+            <div class="caption">Django</div>
+            </div>
+        </div>
 
-<div id="section41" class="container-fluid">
-    <h1>Section 4 Submenu 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section42" class="container-fluid">
-    <h1>Section 4 Submenu 2</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <div class="col-sm-4">
+                <div class="thumbnail" style="background: none;border:none;">
+                    <img src="django.png">
+                    <div class="caption">Django</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <!-- Eazyhacks -->
@@ -216,7 +260,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">MEazyHacks</h4>
+                <h4 class="modal-title">EazyHacks</h4>
             </div>
             <div class="modal-body">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -259,6 +303,209 @@
         </div>
     </div>
 </div>
+
+
+<!-- Explore -->
+<div class="modal fade" id="ExploreModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">EazyHacks</h4>
+            </div>
+            <div class="modal-body">
+                <div id="ExploreCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#ExploreCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#ExploreCarousel" data-slide-to="1"></li>
+                        <li data-target="#EploreCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <center>
+                            <img src="explore_1.png" alt="Los Angeles" style="height:300px;">
+                            </center>
+                        </div>
+
+                        <div class="item">
+                            <center>
+                            <img src="explore_2.png" alt="Chicago" style="height: 300px;">
+                            </center>
+                        </div>
+
+                        <div class="item">
+                            <center>
+                            <img src="explore_3.png" alt="New york" style="height: 300px;">
+                            </center>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#ExploreCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#ExploreCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Storify -->
+<div class="modal fade" id="StorifyModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">EazyHacks</h4>
+            </div>
+            <div class="modal-body">
+                <div id="StorifyCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#StorifyCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#StorifyCarousel" data-slide-to="1"></li>
+                        <li data-target="#StorifyCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="storify_1.png" alt="Los Angeles" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="storify_2.png" alt="Chicago" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="storify_3.png" alt="New york" style="width:100%;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#StorifyCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#StorifyCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DB Helper -->
+<div class="modal fade" id="DBHelperModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">EazyHacks</h4>
+            </div>
+            <div class="modal-body">
+                <div id="DBHelperCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#DBHelperCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#DBHelperCarousel" data-slide-to="1"></li>
+                        <li data-target="#DBHelperCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="dbhelper_1.jpg" alt="Los Angeles" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="dbhelper_2.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="dbhelper_3.jpg" alt="New york" style="width:100%;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#DBHelperCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#DBHelperCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- KMeans -->
+<div class="modal fade" id="KMeansModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">EazyHacks</h4>
+            </div>
+            <div class="modal-body">
+                <div id="KMeansCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#KMeansCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#KMeansCarousel" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="kmeans_1.png" alt="Los Angeles" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="kmeans_2.png" alt="Chicago" style="width:100%;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#KMeansCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#KMeansCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 </body>
