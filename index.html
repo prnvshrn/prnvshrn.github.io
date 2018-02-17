@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
@@ -36,6 +37,16 @@
             });
             $("#show").click(function(){
                 $("p").show();
+            });
+
+            $("#second").hide();
+            $("#first").hover(function(){
+                $("#first").hide();
+                $("#second").show();
+            });
+            $("#HoverButton").click(function(){
+                $("#first").show();
+                $("#second").hide();
             });
         });
     </script>
@@ -117,94 +128,136 @@
         <div class="page-header" style="border-color:black">
             <h2>Work</h2>
         </div>
+
         <div class="row">
             <div class="col-sm-6">
-                <div class="well" style="background-color: lightgray">
-                <h4>
-                    <b>EazyHacks</b><hr>
-                    Web application through which users can post easy solutions or hacks to everyday problems.
-                    <br><br><b>Technologies Used:</b><br>Django, Python, JavaScript, React, HTML5, BootStrap
-                </h4>
+                <div class="thumbnail" style="background:none;">
+                    <img src="screen1.png" style="height: 250px;width: 100%"/>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>
+                    <b>EAZYHACKS</b><br></h3><h4>
+                    <i class="devicon-react-original-wordmark" style="font-size: 50px;"></i>
+                    <i class="devicon-python-plain-wordmark" style="font-size: 50px;"></i>
+                    <i class="devicon-django-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-html5-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-bootstrap-plain-wordmark" style="font-size: 50px;"></i>
+                    <i class="devicon-javascript-plain" style="font-size: 50px;"></i>
+                    <i class="devicon-jquery-plain-wordmark" style="font-size: 50px;"></i>
+
+                    <br><br>
+                    Web application through which users can post easy solutions or hacks to everyday problems. It is
+                    currently hosted on PythonAnywhere.com
                 <form>
-                    <button data-toggle="modal" data-target="#EazyHacksModal" class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                    <a href="http://prnvshrn.pythonanywhere.com/" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Launch Website</a>
+                    <a href="http://prnvshrn.pythonanywhere.com/" style="margin-top: 10px;background: none;color: black"
+                       class="form-control btn btn-primary btn-lg">Launch Website</a>
                 </form>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="well" style="background-color: lightgray">
-                <h4>
-                    <b>Explore</b><hr>
-                    Android application that tells users about wide range of places from restaurants to parks, their
-                    reviews and ratings.<br><br>
-                    <b>Technologies Used:</b><br>Android, Java, Google Places API
                 </h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="thumbnail" style="background:none;">
+                    <img src="explore_1.png" style="height: 250px;width: 50%"/>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>
+                    <b>EXPLORE</b><br></h3><h4>
+                <i class="devicon-android-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-java-plain-wordmark" style="font-size: 50px;"></i>
+
+                <br><br>
+                Web application through which users can post easy solutions or hacks to everyday problems. It is
+                currently hosted on PythonAnywhere.com
                 <form>
-                    <button data-toggle="modal" data-target="#ExploreModal" class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                    <a href="https://play.google.com/store/apps/details?id=novitech.explore&hl=en" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Play Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=novitech.explore&hl=en" style="margin-top: 10px;background: none;color: black"
+                       class="form-control btn btn-primary btn-lg">Launch App</a>
                 </form>
-                </div>
+            </h4>
             </div>
         </div>
+        <hr>
 
         <div class="row">
             <div class="col-sm-6">
-                <div class="well" style="background-color: lightgray">
-                    <h4>
-                        <b>Storify</b><hr>
-                        Storify is a Django-based application that allows users to publish and view short stories under
-                        an anonymous username of their choice.<br><br>
-                        <b>Technologies Used:</b><br>Django, Android, BootStrap, HTML5
-                    </h4>
-                    <form>
-                        <button data-toggle="modal" data-target="#StorifyModal" class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                        <a href="https://github.com/prnvshrn/Storify" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Github</a>
-                    </form>
+                <div class="thumbnail" style="background:none;">
+                    <img src="storify_1.png" style="height: 250px;width: 100%"/>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="well" style="background-color: lightgray">
-                    <h4>
-                        <b>DB Helper</b><hr>
-                        Application to handle operations on PostgreSQL databases like table creation, update and deletion.
-                        <br><br><b>Technologies Used:</b><br>Python, Flask, HTML5, PostgreSQL
-                    </h4>
-                    <form>
-                        <button data-toggle="modal" data-target="#DBHelperModal" class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                        <a href="https://github.com/prnvshrn/DBHelper" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Github</a>
-                    </form>
-                </div>
+                <h3>
+                    <b>STORIFY</b><br></h3><h4>
+                <i class="devicon-python-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-django-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-html5-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-bootstrap-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-javascript-plain" style="font-size: 50px;"></i>
+                <i class="devicon-jquery-plain-wordmark" style="font-size: 50px;"></i>
+
+                <br><br>
+                Storify is a Django-based application that allows users to publish and view short stories under
+                an anonymous username of their choice.<br><br>
+                <form>
+                    <a href="https://github.com/prnvshrn/Storify" style="margin-top: 10px;background: none;color: black"
+                       class="form-control btn btn-primary btn-lg">Go to GitHub</a>
+                </form>
+            </h4>
             </div>
         </div>
+        <hr>
 
         <div class="row">
             <div class="col-sm-6">
-                <div class="well" style="background-color: lightgray">
-                    <h4>
-                        <b>K-means Clustering Simulator</b><hr>
-                        A software that simulates k-means clustering algorithm for user given data.
-                        <br><br><b>Technologies Used:</b><br>Java, MigLayout, JFreeChart
-                    </h4>
-                    <form>
-                        <button data-toggle="modal" data-target="#KMeansModal" class="form-control btn btn-primary btn-lg">View Screenshots</button>
-                        <a href="https://github.com/prnvshrn/Cluster-Analysis-Simulator" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Github</a>
-                    </form>
+                <div class="thumbnail" style="background:none;">
+                    <img src="dbhelper_1.jpg" style="height: 250px;width: 100%"/>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="well" style="background-color: lightgray">
-                    <h4>
-                        <b>FoodWatch</b><hr>
-                        This is an android application that details out the nutrition details of food items
-                        <br><br><b>Technologies Used:</b><br>Android, Java, JSON, mpAndroidChart, Nutritionix API
-                    </h4>
-                    <form>
-                        <a href="https://github.com/prnvshrn/FoodWatch" style="margin-top: 10px" class="form-control btn btn-primary btn-lg">Go to Github</a>
-                    </form>
-                </div>
+                <h3>
+                    <b>DB HELPER</b><br></h3><h4>
+                <i class="devicon-python-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-html5-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-bootstrap-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-javascript-plain" style="font-size: 50px;"></i>
+                <i class="devicon-jquery-plain-wordmark" style="font-size: 50px;"></i>
+                <i class="devicon-postgresql-plain-wordmark" style="font-size: 50px;"></i>
+                <br><br>
+                Application to handle operations on PostgreSQL databases like table creation, update and deletion.
+                <br><br>
+                <form>
+                    <a href="https://github.com/prnvshrn/DBHelper" style="margin-top: 10px;background: none;color: black"
+                       class="form-control btn btn-primary btn-lg">Go to GitHub</a>
+                </form>
+            </h4>
             </div>
         </div>
+        <hr>
 
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="thumbnail" style="background:none;">
+                    <img src="kmeans_2.png" style="height: 250px;width: 100%"/>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3>
+                    <b>K MEANS SIMULATOR</b><br></h3><h4>
+                <i class="devicon-java-plain-wordmark" style="font-size: 50px;"></i>
+                <br><br>
+                A software that simulates k-means clustering algorithm for user given data.
+                <br><br>
+                <form>
+                    <a href="https://github.com/prnvshrn/Cluster-Analysis-Simulator" style="margin-top: 10px;background: none;color: black"
+                       class="form-control btn btn-primary btn-lg">Go to GitHub</a>
+                </form>
+            </h4>
+            </div>
+        </div>
+        <hr>
 
     </div>
 </div>
@@ -348,261 +401,6 @@
     </div>
 
                 </div>
-
-
-
-<!-- Eazyhacks -->
-<div class="modal fade" id="EazyHacksModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">EazyHacks</h4>
-            </div>
-            <div class="modal-body">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="screen1.png" alt="Los Angeles" style="width:100%;">
-                        </div>
-
-                        <div class="item">
-                            <img src="screen2.png" alt="Chicago" style="width:100%;">
-                        </div>
-
-                        <div class="item">
-                            <img src="screen3.png" alt="New york" style="width:100%;">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Explore -->
-<div class="modal fade" id="ExploreModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Explore</h4>
-            </div>
-            <div class="modal-body">
-                <div id="ExploreCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#ExploreCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#ExploreCarousel" data-slide-to="1"></li>
-                        <li data-target="#EploreCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <center>
-                            <img src="explore_1.png" alt="Los Angeles" style="height:300px;">
-                            </center>
-                        </div>
-
-                        <div class="item">
-                            <center>
-                            <img src="explore_2.png" alt="Chicago" style="height: 300px;">
-                            </center>
-                        </div>
-
-                        <div class="item">
-                            <center>
-                            <img src="explore_3.png" alt="New york" style="height: 300px;">
-                            </center>
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#ExploreCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#ExploreCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Storify -->
-<div class="modal fade" id="StorifyModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Storify</h4>
-            </div>
-            <div class="modal-body">
-                <div id="StorifyCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#StorifyCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#StorifyCarousel" data-slide-to="1"></li>
-                        <li data-target="#StorifyCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="storify_1.png" alt="Los Angeles" style="width:100%;">
-                        </div>
-
-                        <div class="item">
-                            <img src="storify_2.png" alt="Chicago" style="width:100%;">
-                        </div>
-
-                        <div class="item">
-                            <img src="storify_3.png" alt="New york" style="width:100%;">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#StorifyCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#StorifyCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- DB Helper -->
-<div class="modal fade" id="DBHelperModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">DB Helper</h4>
-            </div>
-            <div class="modal-body">
-                <div id="DBHelperCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#DBHelperCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#DBHelperCarousel" data-slide-to="1"></li>
-                        <li data-target="#DBHelperCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="dbhelper_1.jpg" alt="Los Angeles" style="width:100%;">
-                        </div>
-
-                        <div class="item">
-                            <img src="dbhelper_2.jpg" alt="Chicago" style="width:100%;">
-                        </div>
-
-                        <div class="item">
-                            <img src="dbhelper_3.jpg" alt="New york" style="width:100%;">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#DBHelperCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#DBHelperCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- KMeans -->
-<div class="modal fade" id="KMeansModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">KMeans Simulator</h4>
-            </div>
-            <div class="modal-body">
-                <div id="KMeansCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#KMeansCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#KMeansCarousel" data-slide-to="1"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="kmeans_1.png" alt="Los Angeles" style="width:100%;">
-                        </div>
-
-                        <div class="item">
-                            <img src="kmeans_2.png" alt="Chicago" style="width:100%;">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#KMeansCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#KMeansCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 
 </body>
