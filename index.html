@@ -20,9 +20,19 @@
             background-color: slategrey;
         }
 
-        .enlarge:hover{
+        .hoverChangeColor:hover{
             transform: scale(1.05);
-            background-color: slategrey;
+            background-color: lightgrey;
+        }
+
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
         }
 
         #section1 {padding-top:50px;color: black; background-color: aliceblue;font-family: 'Tangerine', serif;}
@@ -31,24 +41,7 @@
     </style>
 
     <script>
-        $(document).ready(function(){
-            $("#hide").click(function(){
-                $("p").hide();
-            });
-            $("#show").click(function(){
-                $("p").show();
-            });
 
-            $("#second").hide();
-            $("#first").hover(function(){
-                $("#first").hide();
-                $("#second").show();
-            });
-            $("#HoverButton").click(function(){
-                $("#first").show();
-                $("#second").hide();
-            });
-        });
     </script>
 
 </head>
@@ -114,7 +107,7 @@
         <div class="col-sm-8">
             <center>
             <h3>Find out more below<br>
-            <a href="#section2" style="color: white"><span class="glyphicon glyphicon-chevron-down"></span></a>
+            <a href="#section2" style="color: white"><span class="glyphicon glyphicon-chevron-down" style="color: black"></span></a>
             </h3>
             </center>
         </div>
@@ -126,10 +119,10 @@
 <div id="section2" class="container-fluid">
     <div class="container">
         <div class="page-header" style="border-color:black">
-            <h2>Work</h2>
+            <h2><center>Work</center></h2>
         </div>
 
-        <div class="row">
+        <div class="row hoverChangeColor">
             <div class="col-sm-6">
                 <div class="thumbnail" style="background:none;">
                     <img src="screen1.png" style="height: 250px;width: 100%"/>
@@ -158,7 +151,7 @@
         </div>
         <hr>
 
-        <div class="row">
+        <div class="row hoverChangeColor">
             <div class="col-sm-6">
                 <div class="thumbnail" style="background:none;">
                     <img src="explore_1.png" style="height: 250px;width: 50%"/>
@@ -182,7 +175,7 @@
         </div>
         <hr>
 
-        <div class="row">
+        <div class="row hoverChangeColor">
             <div class="col-sm-6">
                 <div class="thumbnail" style="background:none;">
                     <img src="storify_1.png" style="height: 250px;width: 100%"/>
@@ -210,7 +203,7 @@
         </div>
         <hr>
 
-        <div class="row">
+        <div class="row hoverChangeColor">
             <div class="col-sm-6">
                 <div class="thumbnail" style="background:none;">
                     <img src="dbhelper_1.jpg" style="height: 250px;width: 100%"/>
@@ -237,7 +230,7 @@
         </div>
         <hr>
 
-        <div class="row">
+        <div class="row hoverChangeColor">
             <div class="col-sm-6">
                 <div class="thumbnail" style="background:none;">
                     <img src="kmeans_2.png" style="height: 250px;width: 100%"/>
@@ -263,145 +256,48 @@
 </div>
 
 <div id="section3" class="container-fluid">
+    <div class="container">
     <div class="page-header" style="border-color:black">
         <center><h2>Technical Skills</h2></center>
     </div>
-    <div class="container" style="background-color:forestgreen;padding-bottom: 10px">
-
-        <h3><b>I am comfortable in:</b></h3>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <div class="container">
-                    <h3>Python</h3>
-                    <img src="python.png" style="height: 50px;width:60px;">
-                </div>
+    <div class="row">
+        <div class="col-sm-4 hoverChangeColor">
+            <h3><b>FRONTEND</b></h3><br>
+            <i class="devicon-react-original-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-html5-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-css3-plain-wordmark" style="font-size: 100px"></i>
+            <i class="devicon-bootstrap-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-javascript-plain" style="font-size: 100px;"></i>
+            <i class="devicon-jquery-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-android-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-vuejs-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-d3js-plain" style="font-size: 100px;"></i>
         </div>
-
-            <div class="col-sm-3">
-                <div class="container">
-                    <h3>HTML 5</h3>
-                    <img src="html5.png" style="height: 50px;width:60px;">
-                </div>
-            </div>
-
-            <div class="col-sm-3">
-            <div class="container">
-                <h3>Django</h3>
-                <img src="django.png" style="height: 50px;width:60px;">
-            </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="container">
-                    <h3>JavaScript</h3>
-                    <img src="javascript.png" style="height: 50px;width:60px;">
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-sm-3">
-                    <div class="container">
-                        <h3>React</h3>
-                        <img src="react.png" style="height: 50px;width:60px;">
-                    </div>
-                </div>
-
-                <div class="col-sm-3">
-                    <div class="container">
-                        <h3>BootStrap</h3>
-                        <img src="bootstrap.png" style="height: 50px;width:60px;">
-                    </div>
-                </div>
-
-                <div class="col-sm-3">
-                    <div class="container">
-                        <h3>PostgreSQL</h3>
-                        <img src="postgresql.png" style="height: 50px;width:60px;">
-                    </div>
-                </div>
-
-                <div class="col-sm-3">
-                    <div class="container">
-                        <h3>JQuery</h3>
-                        <img src="jquery-icon.png" style="height: 50px;width:60px;">
-                    </div>
-                </div>
-
-            </div>
+        <div class="col-sm-4 hoverChangeColor">
+            <h3><b>BACKEND</b></h3>
+            <i class="devicon-python-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-java-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-django-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-postgresql-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-mongodb-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-mysql-plain-wordmark" style="font-size: 100px;"></i>
+        </div>
+        <div class="col-sm-4 hoverChangeColor">
+            <h3><b>MISCELLANEOUS</b></h3>
+            <i class="devicon-github-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-linux-plain" style="font-size: 100px;"></i>
+            <i class="devicon-intellij-plain" style="font-size: 100px;"></i>
+            <i class="devicon-confluence-plain-wordmark" style="font-size: 100px;"></i>
+            <i class="devicon-pycharm-plain" style="font-size: 100px;"></i>
+            <i class="devicon-amazonwebservices-original" style="font-size: 100px;"></i>
         </div>
     </div>
-
-    <div class="container" style="background-color: orange;margin-top: 10px;padding-bottom: 10px">
-        <h3><b>I have also worked on:</b></h3>
-            <div class="row">
-
-                <div class="col-sm-3">
-                    <div class="container">
-                        <h3>Java</h3>
-                        <img src="java.png" style="height: 50px;width:60px;">
-                    </div>
-                </div>
-
-                <div class="col-sm-3">
-                    <div class="container">
-                        <h3>C++</h3>
-                        <img src="cpp_logo.png" style="height: 50px;width:60px;">
-                    </div>
-                </div>
-
-                <div class="col-sm-3">
-                    <div class="container">
-                        <h3>Android</h3>
-                        <img src="android-icon.png" style="height: 50px;width:60px;">
-                    </div>
-                </div>
-
-                <div class="col-sm-3">
-                    <div class="container">
-                        <h3>Vue JS</h3>
-                        <img src="Vue.png" style="height: 50px;width:60px;">
-                    </div>
-                </div>
-            </div>
     </div>
+</div>
 
-    <div class="container" style="background-color: lightskyblue;margin-top: 10px;padding-bottom: 10px">
-                <h3>I am trying out:</h3>
-                <div class="row">
-
-                    <div class="col-sm-3">
-                        <div class="container">
-                            <h3>Spark</h3>
-                            <img src="Apache_Spark_logo.svg.png" style="height: 50px;width:60px;">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="container">
-                            <h3>Hadoop</h3>
-                            <img src="hadoop-elephant.png" style="height: 50px;width:60px;">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="container">
-                            <h3>MongoDB</h3>
-                            <img src="mongodb-logo.png" style="height: 50px;width:60px;">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="container">
-                            <h3></h3>
-                        </div>
-                    </div>
-                </div>
-    </div>
-
-                </div>
-
+<div class="footer">
+    <h4>Developed by Pranav Sharan (c) 2018</h4>
+</div>
 
 </body>
 </html>
