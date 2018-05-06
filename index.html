@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -70,7 +72,7 @@
 </nav>
 
 <div id="section1" class="container-fluid">
-    <div class="container">
+    <div class="container" style="width: 100%;">
     <div class="row" style="margin-top: 20px">
     <div class="col-sm-2"></div>
         <div class="col-sm-8">
@@ -80,8 +82,8 @@
                 </div>
             <h3>I am Pranav Sharan, pursuing Masters in Computer Science from Arizona State University at Tempe, Arizona.
                 Right now, I am looking for internship opportunities to demonstrate my skills.
-                <br> <br>I love working on Django, Python, JavaScript, React. In addition to these technologies I have
-                worked on various other technologies like Java, C++, PostgreSQL as well. Apart from coding, football is my
+                <br> <br>I am comfortale in Django, Python, JavaScript, React. In addition to these technologies I have
+                worked on various other technologies like NodeJS, Express, MongoDB, PostgreSQL as well. Apart from coding, football is my
                 passion and I am also an avid video gamer.
             </h3>
             <img src="bg-2.jpg" class="img-circle" style="height:120px;" alt="Los Angeles">
@@ -93,10 +95,10 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
         <center>
-        <button  onclick="location.href='https://github.com/prnvshrn/';" class="btn btn-warning btn-lg"><span class="fa fa-github" style="margin-right: 5px"></span>Github</button>
-        <button onclick="location.href='https://www.linkedin.com/in/pranav-sharan/';" class="btn btn-info btn-lg"><span class="fa fa-linkedin-square" style="margin-right: 5px"></span>LinkedIn</button>
-        <button onclick="location.href='mailto:prnvshrn@gmail.com';" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope" style="margin-right: 5px"></span>Mail</button>
-        <button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-download-alt" style="margin-right: 5px"></span>Resume</button>
+        <button  onclick="location.href='https://github.com/prnvshrn/';" style="background: none;color:black" class="btn btn-warning btn-lg animated fadeInLeft"><span class="fa fa-github" style="margin-right: 5px; "></span>Github</button>
+        <button onclick="location.href='https://www.linkedin.com/in/pranav-sharan/';" style="background: none;color:black" class="btn btn-info btn-lg animated fadeInLeft"><span class="fa fa-linkedin-square" style="margin-right: 5px"></span>LinkedIn</button>
+        <button onclick="location.href='mailto:prnvshrn@gmail.com';" style="background: none;color:black" class="btn btn-default btn-lg animated fadeInLeft"><span class="glyphicon glyphicon-envelope" style="margin-right: 5px"></span>Mail</button>
+        <button class="btn btn-primary btn-lg animated fadeInLeft" style="background: none;color:black"><span class="glyphicon glyphicon-download-alt " style="margin-right: 5px"></span>Resume</button>
 
         </center>
         </div>
@@ -122,134 +124,88 @@
             <h2><center>Work</center></h2>
         </div>
 
-        <div class="row hoverChangeColor">
-            <div class="col-sm-6">
-                <div class="thumbnail" style="background:none;">
-                    <img src="screen1.png" style="height: 250px;width: 100%"/>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail" style="background-color: #c9c4ff; box-shadow: 10px 10px 5px grey;">
+                    <img src="screen1.png" alt="Lights" style="width:100%;height:150px;">
+                    <div class="caption">
+                        <h3>EazyHacks</h3>
+                        <u><b>Python, Django, JavaScript, React, BootStrap</b></u><br>
+                        <i>Web application to post and view hacks to everyday problems.</i>
+                        <form>
+                            <a href="http://prnvshrn.pythonanywhere.com/" style="margin-top: 10px;background: none;color: black"
+                               class="form-control btn btn-primary btn-lg">Launch Website</a>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <h3>
-                    <b>EAZYHACKS</b><br></h3><h4>
-                    <i class="devicon-react-original-wordmark" style="font-size: 50px;"></i>
-                    <i class="devicon-python-plain-wordmark" style="font-size: 50px;"></i>
-                    <i class="devicon-django-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-html5-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-bootstrap-plain-wordmark" style="font-size: 50px;"></i>
-                    <i class="devicon-javascript-plain" style="font-size: 50px;"></i>
-                    <i class="devicon-jquery-plain-wordmark" style="font-size: 50px;"></i>
-
-                    <br><br>
-                    Web application through which users can post easy solutions or hacks to everyday problems. It is
-                    currently hosted on PythonAnywhere.com
-                <form>
-                    <a href="http://prnvshrn.pythonanywhere.com/" style="margin-top: 10px;background: none;color: black"
-                       class="form-control btn btn-primary btn-lg">Launch Website</a>
-                </form>
-                </h4>
-            </div>
-        </div>
-        <hr>
-
-        <div class="row hoverChangeColor">
-            <div class="col-sm-6">
-                <div class="thumbnail" style="background:none;">
-                    <img src="explore_1.png" style="height: 250px;width: 50%"/>
+            <div class="col-md-4">
+                <div class="thumbnail" style="background-color: #c9c4ff; box-shadow: 10px 10px 5px grey;">
+                    <img src="explore_1.png" alt="Nature" style="width:50%;height:150px;">
+                        <div class="caption">
+                            <h3>Explore</h3>
+                            <u><b>Java, Android, Google Places</b></u><br>
+                            <i>Android application that lists out places of interests like restaurants, museums</i>
+                            <form>
+                                <a href="https://play.google.com/store/apps/details?id=novitech.explore&hl=en" style="margin-top: 10px;background: none;color: black"
+                                   class="form-control btn btn-primary btn-lg">Launch App</a>
+                            </form>
+                        </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <h3>
-                    <b>EXPLORE</b><br></h3><h4>
-                <i class="devicon-android-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-java-plain-wordmark" style="font-size: 50px;"></i>
+            <div class="col-md-4">
+                <div class="thumbnail" style="background-color: #c9c4ff; box-shadow: 10px 10px 5px grey;">
 
-                <br><br>
-                Android application that lists out places of interest like restaurants, hotels and their ratings and reviews
-                <form>
-                    <a href="https://play.google.com/store/apps/details?id=novitech.explore&hl=en" style="margin-top: 10px;background: none;color: black"
-                       class="form-control btn btn-primary btn-lg">Launch App</a>
-                </form>
-            </h4>
-            </div>
-        </div>
-        <hr>
+                        <img src="storify_1.png" alt="Fjords" style="width:100%;height:150px;">
+                        <div class="caption">
+                            <h3>Storify</h3>
+                            <u><b>Python, Django, BootStrap</b></u><br>
+                            <i>Web application to add or browse through stories posted under anonymous username</i>
+                            <form>
+                                <a href="https://github.com/prnvshrn/Storify" style="margin-top: 10px;background: none;color: black"
+                                   class="form-control btn btn-primary btn-lg">View Github</a>
+                            </form>
+                        </div>
 
-        <div class="row hoverChangeColor">
-            <div class="col-sm-6">
-                <div class="thumbnail" style="background:none;">
-                    <img src="storify_1.png" style="height: 250px;width: 100%"/>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <h3>
-                    <b>STORIFY</b><br></h3><h4>
-                <i class="devicon-python-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-django-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-html5-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-bootstrap-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-javascript-plain" style="font-size: 50px;"></i>
-                <i class="devicon-jquery-plain-wordmark" style="font-size: 50px;"></i>
-
-                <br><br>
-                Storify is a Django-based application that allows users to publish and view short stories under
-                an anonymous username of their choice.<br><br>
-                <form>
-                    <a href="https://github.com/prnvshrn/Storify" style="margin-top: 10px;background: none;color: black"
-                       class="form-control btn btn-primary btn-lg">Go to GitHub</a>
-                </form>
-            </h4>
-            </div>
         </div>
-        <hr>
 
-        <div class="row hoverChangeColor">
-            <div class="col-sm-6">
-                <div class="thumbnail" style="background:none;">
-                    <img src="dbhelper_1.jpg" style="height: 250px;width: 100%"/>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail" style="background-color: #c9c4ff; box-shadow: 10px 10px 5px grey;">
+                    <img src="dbhelper_1.jpg" alt="Lights" style="width:100%;height:150px;">
+                    <div class="caption">
+                        <h3>DB Helper</h3>
+                        <u><b>Python, Flask, BootStrap, PostgreSQL</b></u><br>
+                        <i>Web application that creates, edit and deletes tables in PostgreSQL database</i>
+                        <form>
+                            <a href="https://github.com/prnvshrn/DBHelper" style="margin-top: 10px;background: none;color: black"
+                               class="form-control btn btn-primary btn-lg">View Github</a>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <h3>
-                    <b>DB HELPER</b><br></h3><h4>
-                <i class="devicon-python-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-html5-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-bootstrap-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-javascript-plain" style="font-size: 50px;"></i>
-                <i class="devicon-jquery-plain-wordmark" style="font-size: 50px;"></i>
-                <i class="devicon-postgresql-plain-wordmark" style="font-size: 50px;"></i>
-                <br><br>
-                Application to handle operations on PostgreSQL databases like table creation, update and deletion.
-                <br><br>
-                <form>
-                    <a href="https://github.com/prnvshrn/DBHelper" style="margin-top: 10px;background: none;color: black"
-                       class="form-control btn btn-primary btn-lg">Go to GitHub</a>
-                </form>
-            </h4>
-            </div>
-        </div>
-        <hr>
+            <div class="col-md-4">
+                <div class="thumbnail" style="background-color: #c9c4ff; box-shadow: 10px 10px 5px grey;">
 
-        <div class="row hoverChangeColor">
-            <div class="col-sm-6">
-                <div class="thumbnail" style="background:none;">
-                    <img src="kmeans_2.png" style="height: 250px;width: 100%"/>
+                        <img src="kmeans_2.png" alt="Nature" style="width:100%;height:150px;">
+                        <div class="caption">
+                            <h3>K means simulator</h3>
+                            <u><b>Java</b></u><br>
+                            <i>Java application that simulates a kmeans clustering algorithm</i>
+                            <form>
+                                <a href="https://github.com/prnvshrn/Cluster-Analysis-Simulator" style="margin-top: 10px;background: none;color: black"
+                                   class="form-control btn btn-primary btn-lg">View Github</a>
+                            </form>
+                        </div>
+
                 </div>
             </div>
-            <div class="col-sm-6">
-                <h3>
-                    <b>K MEANS SIMULATOR</b><br></h3><h4>
-                <i class="devicon-java-plain-wordmark" style="font-size: 50px;"></i>
-                <br><br>
-                A software that simulates k-means clustering algorithm for user given data.
-                <br><br>
-                <form>
-                    <a href="https://github.com/prnvshrn/Cluster-Analysis-Simulator" style="margin-top: 10px;background: none;color: black"
-                       class="form-control btn btn-primary btn-lg">Go to GitHub</a>
-                </form>
-            </h4>
+            <div class="col-md-4">
+
             </div>
         </div>
-        <hr>
 
     </div>
 </div>
@@ -260,35 +216,109 @@
         <center><h2>Technical Skills</h2></center>
     </div>
     <div class="row">
-        <div class="col-sm-4 hoverChangeColor">
-            <h3><b>FRONTEND</b></h3><br>
-            <i class="devicon-react-original-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-html5-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-css3-plain-wordmark" style="font-size: 100px"></i>
-            <i class="devicon-bootstrap-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-javascript-plain" style="font-size: 100px;"></i>
-            <i class="devicon-jquery-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-android-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-vuejs-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-d3js-plain" style="font-size: 100px;"></i>
+        <div class="col-sm-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th width="30%"></th>
+                    <th width="70%"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><b>Python</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            80%
+                        </div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><b>JavaScript</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                            75%
+                        </div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><b>Django</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            80%
+                        </div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><b>HTML5 & CSS3</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            85%
+                        </div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><b>BootStrap</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            85%
+                        </div>
+                    </div></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="col-sm-4 hoverChangeColor">
-            <h3><b>BACKEND</b></h3>
-            <i class="devicon-python-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-java-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-django-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-postgresql-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-mongodb-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-mysql-plain-wordmark" style="font-size: 100px;"></i>
-        </div>
-        <div class="col-sm-4 hoverChangeColor">
-            <h3><b>MISCELLANEOUS</b></h3>
-            <i class="devicon-github-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-linux-plain" style="font-size: 100px;"></i>
-            <i class="devicon-intellij-plain" style="font-size: 100px;"></i>
-            <i class="devicon-confluence-plain-wordmark" style="font-size: 100px;"></i>
-            <i class="devicon-pycharm-plain" style="font-size: 100px;"></i>
-            <i class="devicon-amazonwebservices-original" style="font-size: 100px;"></i>
+        <div class="col-sm-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th width="30%"></th>
+                    <th width="70%"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><b>React</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                            75%
+                        </div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><b>Node JS</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            70%
+                        </div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><b>Express</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            70%
+                        </div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><b>Git</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            85%
+                        </div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><b>MongoDB</b></td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                            75%
+                        </div>
+                    </div></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     </div>
